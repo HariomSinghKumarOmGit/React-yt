@@ -1,6 +1,9 @@
 import React from 'react'
 import { Card } from './components/Card'
 
+
+
+
   const jobOpenings = [
     { key: 1,
       brandLogo: "https://pngimg.com/uploads/meta/meta_PNG12.png",
@@ -117,7 +120,7 @@ const App = () => {
   return (
       <div className="parent">
        {jobOpenings.map((elem) => (
-        <Card company={elem.companyName} />
+        <Card company={elem.companyName} datePosted={elem.datePosted} post={elem.post} tag1={elem.tag1} brandLogo={elem.brandLogo} pay={elem.pay} tag2={elem.tag2} />
       ))}
     </div>
   )
