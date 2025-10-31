@@ -2,6 +2,338 @@ import React from 'react'
 import { Card } from './components/Card'
 
 
+const jobOpeningsNewWorceData = [
+  {
+    key: 1,
+    brandLogo: "https://pngimg.com/uploads/meta/meta_PNG12.png",
+    companyName: "Meta",
+    datePosted: "5 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$65/hour",
+    location: "Menlo Park, USA"
+  },
+  {
+    key: 2,
+    brandLogo: "https://pngimg.com/uploads/google/google_PNG21.png",
+    companyName: "Google",
+    datePosted: "3 days ago",
+    post: "Senior Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$80/hour",
+    location: "Mountain View, USA"
+  },
+  {
+    key: 3,
+    brandLogo: "https://pngimg.com/uploads/amazon/amazon_PNG11.png",
+    companyName: "Amazon",
+    datePosted: "1 day ago",
+    post: "Staff Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$95/hour",
+    location: "Seattle, USA"
+  },
+  {
+    key: 4,
+    brandLogo: "https://pngimg.com/uploads/apple_logo/apple_logo_PNG25.png",
+    companyName: "Apple",
+    datePosted: "4 days ago",
+    post: "Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$70/hour",
+    location: "Cupertino, USA"
+  },
+  {
+    key: 5,
+    brandLogo: "https://pngimg.com/uploads/microsoft/microsoft_PNG30.png",
+    companyName: "Microsoft",
+    datePosted: "2 days ago",
+    post: "Lead Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$90/hour",
+    location: "Redmond, USA"
+  },
+  {
+    key: 6,
+    brandLogo: "https://pngimg.com/uploads/netflix/netflix_PNG23.png",
+    companyName: "Netflix",
+    datePosted: "6 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$85/hour",
+    location: "Los Gatos, USA"
+  },
+  {
+    key: 7,
+    brandLogo: "https://pngimg.com/uploads/uber/uber_PNG9.png",
+    companyName: "Uber",
+    datePosted: "1 day ago",
+    post: "Junior Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$60/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 8,
+    brandLogo: "https://pngimg.com/uploads/airbnb/airbnb_PNG15.png",
+    companyName: "Airbnb",
+    datePosted: "3 days ago",
+    post: "Senior Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$100/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 9,
+    brandLogo: "https://pngimg.com/uploads/tesla/tesla_PNG18.png",
+    companyName: "Tesla",
+    datePosted: "2 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$75/hour",
+    location: "Austin, USA"
+  },
+  {
+    key: 10,
+    brandLogo: "https://pngimg.com/uploads/salesforce/salesforce_PNG1.png",
+    companyName: "Salesforce",
+    datePosted: "4 days ago",
+    post: "Staff Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$92/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 11,
+    brandLogo: "https://pngimg.com/uploads/intel/intel_PNG16.png",
+    companyName: "Intel",
+    datePosted: "5 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$68/hour",
+    location: "Santa Clara, USA"
+  },
+  {
+    key: 12,
+    brandLogo: "https://pngimg.com/uploads/ibm/ibm_PNG8.png",
+    companyName: "IBM",
+    datePosted: "1 day ago",
+    post: "Mid Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$78/hour",
+    location: "Armonk, USA"
+  },
+  {
+    key: 13,
+    brandLogo: "https://pngimg.com/uploads/oracle/oracle_PNG1.png",
+    companyName: "Oracle",
+    datePosted: "3 days ago",
+    post: "Senior Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$88/hour",
+    location: "Austin, USA"
+  },
+  {
+    key: 14,
+    brandLogo: "https://pngimg.com/uploads/adobe/adobe_PNG1.png",
+    companyName: "Adobe",
+    datePosted: "2 days ago",
+    post: "Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$82/hour",
+    location: "San Jose, USA"
+  },
+  {
+    key: 15,
+    brandLogo: "https://pngimg.com/uploads/cisco/cisco_PNG10.png",
+    companyName: "Cisco",
+    datePosted: "6 days ago",
+    post: "Lead Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$96/hour",
+    location: "San Jose, USA"
+  },
+  {
+    key: 16,
+    brandLogo: "https://pngimg.com/uploads/spotify/spotify_PNG23.png",
+    companyName: "Spotify",
+    datePosted: "4 days ago",
+    post: "Junior Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$62/hour",
+    location: "Stockholm, Sweden"
+  },
+  {
+    key: 17,
+    brandLogo: "https://pngimg.com/uploads/paypal/paypal_PNG19.png",
+    companyName: "PayPal",
+    datePosted: "1 day ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$76/hour",
+    location: "San Jose, USA"
+  },
+  {
+    key: 18,
+    brandLogo: "https://pngimg.com/uploads/dropbox/dropbox_PNG18.png",
+    companyName: "Dropbox",
+    datePosted: "3 days ago",
+    post: "Staff Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$98/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 19,
+    brandLogo: "https://pngimg.com/uploads/slack/slack_PNG16.png",
+    companyName: "Slack",
+    datePosted: "2 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$66/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 20,
+    brandLogo: "https://pngimg.com/uploads/atlassian/atlassian_PNG1.png",
+    companyName: "Atlassian",
+    datePosted: "5 days ago",
+    post: "Senior Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$84/hour",
+    location: "Sydney, Australia"
+  },
+  {
+    key: 21,
+    brandLogo: "https://pngimg.com/uploads/zoom/zoom_PNG8.png",
+    companyName: "Zoom",
+    datePosted: "1 day ago",
+    post: "Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$91/hour",
+    location: "San Jose, USA"
+  },
+  {
+    key: 22,
+    brandLogo: "https://pngimg.com/uploads/shopify/shopify_PNG1.png",
+    companyName: "Shopify",
+    datePosted: "4 days ago",
+    post: "Mid Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$77/hour",
+    location: "Ottawa, Canada"
+  },
+  {
+    key: 23,
+    brandLogo: "https://pngimg.com/uploads/twitter/twitter_PNG15.png",
+    companyName: "X (Twitter)",
+    datePosted: "3 days ago",
+    post: "Lead Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$94/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 24,
+    brandLogo: "https://pngimg.com/uploads/linkedin/linkedin_PNG4.png",
+    companyName: "LinkedIn",
+    datePosted: "2 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$64/hour",
+    location: "Sunnyvale, USA"
+  },
+  {
+    key: 25,
+    brandLogo: "https://pngimg.com/uploads/reddit/reddit_PNG12.png",
+    companyName: "Reddit",
+    datePosted: "6 days ago",
+    post: "Senior Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$81/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 26,
+    brandLogo: "https://pngimg.com/uploads/uber/uber_PNG9.png",
+    companyName: "Stripe",
+    datePosted: "1 day ago",
+    post: "Staff Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$99/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 27,
+    brandLogo: "https://pngimg.com/uploads/snapchat/snapchat_PNG21.png",
+    companyName: "Snap Inc.",
+    datePosted: "3 days ago",
+    post: "Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Junior Level",
+    pay: "$67/hour",
+    location: "Santa Monica, USA"
+  },
+  {
+    key: 28,
+    brandLogo: "https://pngimg.com/uploads/pinterest/pinterest_PNG21.png",
+    companyName: "Pinterest",
+    datePosted: "4 days ago",
+    post: "Mid Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$79/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 29,
+    brandLogo: "https://pngimg.com/uploads/lyft/lyft_PNG1.png",
+    companyName: "Lyft",
+    datePosted: "2 days ago",
+    post: "Senior Frontend Engineer",
+    tag1: "Full Time",
+    tag2: "Senior Level",
+    pay: "$89/hour",
+    location: "San Francisco, USA"
+  },
+  {
+    key: 30,
+    brandLogo: "https://pngimg.com/uploads/doorDash/doordash_PNG1.png",
+    companyName: "DoorDash",
+    datePosted: "5 days ago",
+    post: "Frontend Developer",
+    tag1: "Full Time",
+    tag2: "Mid Level",
+    pay: "$83/hour",
+    location: "San Francisco, USA"
+  }
+]
 
 
   const jobOpenings = [
