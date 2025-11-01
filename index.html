@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .leng{
+            height: 10000px;
+        }
+
+        .boy{
+  position: fixed;
+  top: 0;
+  left: 10px;
+  width: 100%;
+  background: #111;
+  color: white;
+  padding: 50px 20px;
+  z-index: 2;
+}
+        
+        .booy{
+            position: static;
+            top: 10px;
+            left: 20px;
+            padding: 50px;
+            z-index: 2;
+            background: red;
+        }
+        .girl{
+            background: yellow;
+            position: absolute;
+            top: 50px;
+            right: 60px;
+        }
+        .fix{
+            background: red;
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="boy">boy</div>
+    <div class="girl">Girl</div>
+    <div class="fix">babu</div>
+    <div class="leng"></div>
+</body>
+</html>
