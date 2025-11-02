@@ -5,10 +5,7 @@ const App = () => {
   const [num, setNum] = useState({user:'Aarav', age:20})
 
   const btnCed = ()=>{
-    const newNum = {...num}
-    newNum.user = 'Sanjay';
-    newNum.age =32;
-    setNum (newNum)
+    setNum(prev=>({...prev, age:50}))
   }
 
   return (
