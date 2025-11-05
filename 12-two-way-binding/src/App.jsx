@@ -8,7 +8,7 @@ const App = () => {
     e.preventDefault();
     console.log('Form submitted by', title);
 
-    //  setTitle('')
+     setTitle('')
   }
 
   return (
