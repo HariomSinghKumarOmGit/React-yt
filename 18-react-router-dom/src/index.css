@@ -1,0 +1,36 @@
+*{
+
+    color: white;
+}
+
+body  {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-decoration: underline;
+    white-space: nowrap;
+}
+
+.nev{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(56, 56, 56);
+}
+
+.nev div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 25px;
+}
